@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="{$locale}" {if $wa->getLocale() == 'ar' || $wa->getLocale() == 'he'}dir="rtl"{/if}>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    
+    {* Theme Title and Meta *}
+    <title>{if $wa_title}{$wa_title|escape}{else}{$wa->shop->settings('name')}{/if}</title>
+    <meta name="description" content="{if $meta_description}{$meta_description|escape}{else}{$wa->shop->settings('description')}{/if}">
+    <meta name="keywords" content="{if $meta_keywords}{$meta_keywords|escape}{/if}">
+    
+    {* Canonical URL *}
+    {if $canonical}<link rel="canonical" href="{$canonical}">{/if}
+    
+    {* Open Graph Meta Tags *}
+    <meta property="og:title" content="{if $wa_title}{$wa_title|escape}{else}{$wa->shop->settings('name')}{/if}">
+    <meta property="og:description" content="{if $meta_description}{$meta_description|escape}{else}{$wa->shop->settings('description')}{/if}">
+    <meta property="og:type" content="{if $product}product{else}website{/if}">
+    <meta property="og:url" content="{$wa->currentUrl()}">
+    {if $og_image}<meta property="og:image" content="{$og_image}">{/if}
+    
+    {* Theme Settings Variables *}
+    {$layout_type = $wa->theme()->settings('layout_type', 'wide')}
+    {$color_scheme = $wa->theme()->settings('color_scheme', 'light')}
+    {$header_style = $wa->theme()->settings('header_style', 'default')}
+    {$logo = $wa->theme()->settings('logo')}
+    {$preload_assets = $wa->theme()->settings('preload_assets', true)}
+    
+    {* Preload Critical Assets for Performance *}
+    {if $preload_assets}
+    <link rel="preload" href="{$wa_theme_url}css/bootstrap.min.css" as="style">
+    <link rel="preload" href="{$wa_theme_url}css/waboot.css" as="style">
+    <link rel="preload" href="{$wa_theme_url}js/bootstrap.bundle.min.js" as="script">
+    <link rel="preload" href="{$wa_theme_url}js/alpine.min.js" as="script">
+    {/if}
+    
+    {* Critical CSS - Bootstrap 5 Framework *}
+    <link rel="stylesheet" href="{$wa_theme_url}css/bootstrap.min.css">
+    
+    {* Theme Custom Styles *}
+    <link rel="stylesheet" href="{$wa_theme_url}css/waboot.css">
+    
+    {* BEM Utility Classes *}
+    <link rel="stylesheet" href="{$wa_theme_url}css/utilities.css">
+    
+    {* RTL Styles for Right-to-Left Languages *}
+    {if $wa->getLocale() == 'ar' || $wa->getLocale() == 'he'}
+    <link rel="stylesheet" href="{$wa_theme_url}css/waboot-rtl.css">
+    {/if}
+    
+    {* Dark Mode Styles *}
+    <link rel="stylesheet" href="{$wa_theme_url}css/waboot-dark.css" media="(prefers-color-scheme: dark)" {if $color_scheme == 'dark'}id="waboot-dark-theme"{/if}>
+    
+    {* Favicon and Touch Icons *}
+    <link rel="icon" type="image/x-icon" href="{$wa_theme_url}img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="{$wa_theme_url}img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="{$wa_theme_url}img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="{$wa_theme_url}img/favicon-16x16.png">
+    <link rel="manifest" href="{$wa_theme_url}img/site.webmanifest">
+    
+    {* Additional Head Content from Apps *}
+    {$wa->header()}
+    
+    {* Theme Color for Browser UI *}
+    <meta name="theme-color" content="{if $color_scheme == 'dark'}#1a1a1a{else}#ffffff{/if}">
+    
+    {* Structured Data for SEO *}
+    {if $product}
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "{$product.name|escape}",
+        "description": "{$product.summary|escape}",
+        "image": "{if $product.image}{$product.image.url_big}{/if}",
+        "brand": {
+            "@type": "Brand",
+            "name": "{$wa->shop->settings('name')}"
+        },
+        "offers": {
+            "@type": "Offer",
+            "price": "{$product.price}",
+            "priceCurrency": "{$wa->shop->currency()}",
+            "availability": "{if $product.count > 0}https://schema.org/InStock{else}https://schema.org/OutOfStock{/if}"
+        }
+    }
+    </script>
+    {/if}
+</head>
+
+<body class="waboot-theme layout-{$layout_type} color-{$color_scheme} header-{$header_style}
+    {if $wa->getEnv('REQUEST_URI') == '/'}page-home{/if}
+    {if $product}page-product{/if}
+    {if $category}page-category{/if}
+    {if $page}page-{$page.url}{/if}"
+    {if $color_scheme == 'auto'}data-theme="auto"{/if}>
+
+    {* Skip to Content Link for Accessibility *}
+    <a class="waboot__skip-link" href="#main-content">Skip to main content</a>
+
+    {* Site Header *}
+    {include file="organisms/site-header.html"}
+
+    {* Main Content Area *}
+    <main id="main-content" class="waboot__main" role="main">
+        {block name="content"}
+            {* Default content block - will be overridden by child templates *}
+            <div class="waboot__content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Welcome to {$wa->shop->settings('name')}</h1>
+                            <p>This is the default content area.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {/block}
+    </main>
+
+    {* Site Footer *}
+    {include file="organisms/site-footer.html"}
+
+    {* Alpine.js - Lightweight JavaScript Framework *}
+    <script defer src="{$wa_theme_url}js/alpine.min.js"></script>
+    
+    {* Bootstrap 5 JavaScript Bundle *}
+    <script defer src="{$wa_theme_url}js/bootstrap.bundle.min.js"></script>
+    
+    {* Theme Custom JavaScript *}
+    <script defer src="{$wa_theme_url}js/waboot.js"></script>
+    
+    {* Performance Monitoring *}
+    <script>
+        // Web Vitals monitoring
+        if ('web-vitals' in window) {
+            import('https://unpkg.com/web-vitals@3/dist/web-vitals.js').then(({getCLS, getFID, getFCP, getLCP, getTTFB}) => {
+                getCLS(console.log);
+                getFID(console.log);
+                getFCP(console.log);
+                getLCP(console.log);
+                getTTFB(console.log);
+            });
+        }
+    </script>
+    
+    {* Additional Footer Content from Apps *}
+    {$wa->footer()}
+</body>
+</html>
