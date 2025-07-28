@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme id="waboot" app="shop">
+    <name>Waboot Shop</name>
+    <description>A modern, fully-local Webasyst shop theme inheriting from site:waboot. Built with Bootstrap 5, Alpine.js, and BEM methodology for outstanding e-commerce performance.</description>
+    <version>1.0.0</version>
+    <vendor>Waboot Team</vendor>
+    <author>WordPress to Webasyst Migration Project</author>
+    <url>https://github.com/wp-wa-migration/waboot</url>
+    
+    <!-- Parent theme - inherits from site:waboot -->
+    <parent_theme>site:waboot</parent_theme>
+    
+    <!-- LOCALIZATION SECTION -->
+    <locales>
+        <!-- E-commerce Elements -->
+        <locale>
+            <msgid>Add to Cart</msgid>
+            <msgstr locale="ru_RU">В корзину</msgstr>
+            <msgstr locale="en_US">Add to Cart</msgstr>
+        </locale>
+        <locale>
+            <msgid>Shopping Cart</msgid>
+            <msgstr locale="ru_RU">Корзина покупок</msgstr>
+            <msgstr locale="en_US">Shopping Cart</msgstr>
+        </locale>
+        <locale>
+            <msgid>Quick View</msgid>
+            <msgstr locale="ru_RU">Быстрый просмотр</msgstr>
+            <msgstr locale="en_US">Quick View</msgstr>
+        </locale>
+        <locale>
+            <msgid>Add to Wishlist</msgid>
+            <msgstr locale="ru_RU">В избранное</msgstr>
+            <msgstr locale="en_US">Add to Wishlist</msgstr>
+        </locale>
+        <locale>
+            <msgid>Compare</msgid>
+            <msgstr locale="ru_RU">Сравнить</msgstr>
+            <msgstr locale="en_US">Compare</msgstr>
+        </locale>
+        <locale>
+            <msgid>Product Details</msgid>
+            <msgstr locale="ru_RU">Подробности товара</msgstr>
+            <msgstr locale="en_US">Product Details</msgstr>
+        </locale>
+        <locale>
+            <msgid>Search products...</msgid>
+            <msgstr locale="ru_RU">Поиск товаров...</msgstr>
+            <msgstr locale="en_US">Search products...</msgstr>
+        </locale>
+        
+        <!-- Product Properties -->
+        <locale>
+            <msgid>Price</msgid>
+            <msgstr locale="ru_RU">Цена</msgstr>
+            <msgstr locale="en_US">Price</msgstr>
+        </locale>
+        <locale>
+            <msgid>Availability</msgid>
+            <msgstr locale="ru_RU">Наличие</msgstr>
+            <msgstr locale="en_US">Availability</msgstr>
+        </locale>
+        <locale>
+            <msgid>In Stock</msgid>
+            <msgstr locale="ru_RU">В наличии</msgstr>
+            <msgstr locale="en_US">In Stock</msgstr>
+        </locale>
+        <locale>
+            <msgid>Out of Stock</msgid>
+            <msgstr locale="ru_RU">Нет в наличии</msgstr>
+            <msgstr locale="en_US">Out of Stock</msgstr>
+        </locale>
+        <locale>
+            <msgid>Low Stock</msgid>
+            <msgstr locale="ru_RU">Осталось мало</msgstr>
+            <msgstr locale="en_US">Low Stock</msgstr>
+        </locale>
+        
+        <!-- Categories and Filters -->
+        <locale>
+            <msgid>Categories</msgid>
+            <msgstr locale="ru_RU">Категории</msgstr>
+            <msgstr locale="en_US">Categories</msgstr>
+        </locale>
+        <locale>
+            <msgid>Filter</msgid>
+            <msgstr locale="ru_RU">Фильтр</msgstr>
+            <msgstr locale="en_US">Filter</msgstr>
+        </locale>
+        <locale>
+            <msgid>Sort by</msgid>
+            <msgstr locale="ru_RU">Сортировать по</msgstr>
+            <msgstr locale="en_US">Sort by</msgstr>
+        </locale>
+        <locale>
+            <msgid>Show more</msgid>
+            <msgstr locale="ru_RU">Показать еще</msgstr>
+            <msgstr locale="en_US">Show more</msgstr>
+        </locale>
+        <locale>
+            <msgid>Show less</msgid>
+            <msgstr locale="ru_RU">Показать меньше</msgstr>
+            <msgstr locale="en_US">Show less</msgstr>
+        </locale>
+        
+        <!-- Shopping Cart -->
+        <locale>
+            <msgid>Cart</msgid>
+            <msgstr locale="ru_RU">Корзина</msgstr>
+            <msgstr locale="en_US">Cart</msgstr>
+        </locale>
+        <locale>
+            <msgid>Cart is empty</msgid>
+            <msgstr locale="ru_RU">Корзина пуста</msgstr>
+            <msgstr locale="en_US">Cart is empty</msgstr>
+        </locale>
+        <locale>
+            <msgid>Remove from cart</msgid>
+            <msgstr locale="ru_RU">Удалить из корзины</msgstr>
+            <msgstr locale="en_US">Remove from cart</msgstr>
+        </locale>
+        <locale>
+            <msgid>Update cart</msgid>
+            <msgstr locale="ru_RU">Обновить корзину</msgstr>
+            <msgstr locale="en_US">Update cart</msgstr>
+        </locale>
+        <locale>
+            <msgid>Continue shopping</msgid>
+            <msgstr locale="ru_RU">Продолжить покупки</msgstr>
+            <msgstr locale="en_US">Continue shopping</msgstr>
+        </locale>
+        <locale>
+            <msgid>Proceed to checkout</msgid>
+            <msgstr locale="ru_RU">Оформить заказ</msgstr>
+            <msgstr locale="en_US">Proceed to checkout</msgstr>
+        </locale>
+        
+        <!-- Checkout Process -->
+        <locale>
+            <msgid>Checkout</msgid>
+            <msgstr locale="ru_RU">Оформление заказа</msgstr>
+            <msgstr locale="en_US">Checkout</msgstr>
+        </locale>
+        <locale>
+            <msgid>Billing address</msgid>
+            <msgstr locale="ru_RU">Адрес для выставления счета</msgstr>
+            <msgstr locale="en_US">Billing address</msgstr>
+        </locale>
+        <locale>
+            <msgid>Shipping address</msgid>
+            <msgstr locale="ru_RU">Адрес доставки</msgstr>
+            <msgstr locale="en_US">Shipping address</msgstr>
+        </locale>
+        <locale>
+            <msgid>Payment method</msgid>
+            <msgstr locale="ru_RU">Способ оплаты</msgstr>
+            <msgstr locale="en_US">Payment method</msgstr>
+        </locale>
+        <locale>
+            <msgid>Shipping method</msgid>
+            <msgstr locale="ru_RU">Способ доставки</msgstr>
+            <msgstr locale="en_US">Shipping method</msgstr>
+        </locale>
+        <locale>
+            <msgid>Order summary</msgid>
+            <msgstr locale="ru_RU">Сводка заказа</msgstr>
+            <msgstr locale="en_US">Order summary</msgstr>
+        </locale>
+        
+        <!-- Product Reviews -->
+        <locale>
+            <msgid>Reviews</msgid>
+            <msgstr locale="ru_RU">Отзывы</msgstr>
+            <msgstr locale="en_US">Reviews</msgstr>
+        </locale>
+        <locale>
+            <msgid>Write a review</msgid>
+            <msgstr locale="ru_RU">Написать отзыв</msgstr>
+            <msgstr locale="en_US">Write a review</msgstr>
+        </locale>
+        <locale>
+            <msgid>Rating</msgid>
+            <msgstr locale="ru_RU">Рейтинг</msgstr>
+            <msgstr locale="en_US">Rating</msgstr>
+        </locale>
+        <locale>
+            <msgid>Your review</msgid>
+            <msgstr locale="ru_RU">Ваш отзыв</msgstr>
+            <msgstr locale="en_US">Your review</msgstr>
+        </locale>
+        <locale>
+            <msgid>Submit review</msgid>
+            <msgstr locale="ru_RU">Отправить отзыв</msgstr>
+            <msgstr locale="en_US">Submit review</msgstr>
+        </locale>
+        
+        <!-- Product Features -->
+        <locale>
+            <msgid>Features</msgid>
+            <msgstr locale="ru_RU">Характеристики</msgstr>
+            <msgstr locale="en_US">Features</msgstr>
+        </locale>
+        <locale>
+            <msgid>Specifications</msgid>
+            <msgstr locale="ru_RU">Спецификации</msgstr>
+            <msgstr locale="en_US">Specifications</msgstr>
+        </locale>
+        <locale>
+            <msgid>Description</msgid>
+            <msgstr locale="ru_RU">Описание</msgstr>
+            <msgstr locale="en_US">Description</msgstr>
+        </locale>
+        <locale>
+            <msgid>Related products</msgid>
+            <msgstr locale="ru_RU">Похожие товары</msgstr>
+            <msgstr locale="en_US">Related products</msgstr>
+        </locale>
+        <locale>
+            <msgid>You might also like</msgid>
+            <msgstr locale="ru_RU">Вам также может понравиться</msgstr>
+            <msgstr locale="en_US">You might also like</msgstr>
+        </locale>
+        
+        <!-- Order Status -->
+        <locale>
+            <msgid>Order placed</msgid>
+            <msgstr locale="ru_RU">Заказ размещен</msgstr>
+            <msgstr locale="en_US">Order placed</msgstr>
+        </locale>
+        <locale>
+            <msgid>Order confirmed</msgid>
+            <msgstr locale="ru_RU">Заказ подтвержден</msgstr>
+            <msgstr locale="en_US">Order confirmed</msgstr>
+        </locale>
+        <locale>
+            <msgid>Order shipped</msgid>
+            <msgstr locale="ru_RU">Заказ отправлен</msgstr>
+            <msgstr locale="en_US">Order shipped</msgstr>
+        </locale>
+        <locale>
+            <msgid>Order delivered</msgid>
+            <msgstr locale="ru_RU">Заказ доставлен</msgstr>
+            <msgstr locale="en_US">Order delivered</msgstr>
+        </locale>
+        <locale>
+            <msgid>Track order</msgid>
+            <msgstr locale="ru_RU">Отследить заказ</msgstr>
+            <msgstr locale="en_US">Track order</msgstr>
+        </locale>
+        
+        <!-- Account Management -->
+        <locale>
+            <msgid>My account</msgid>
+            <msgstr locale="ru_RU">Мой аккаунт</msgstr>
+            <msgstr locale="en_US">My account</msgstr>
+        </locale>
+        <locale>
+            <msgid>Order history</msgid>
+            <msgstr locale="ru_RU">История заказов</msgstr>
+            <msgstr locale="en_US">Order history</msgstr>
+        </locale>
+        <locale>
+            <msgid>Wishlist</msgid>
+            <msgstr locale="ru_RU">Избранное</msgstr>
+            <msgstr locale="en_US">Wishlist</msgstr>
+        </locale>
+        <locale>
+            <msgid>Personal information</msgid>
+            <msgstr locale="ru_RU">Личная информация</msgstr>
+            <msgstr locale="en_US">Personal information</msgstr>
+        </locale>
+        <locale>
+            <msgid>Change password</msgid>
+            <msgstr locale="ru_RU">Изменить пароль</msgstr>
+            <msgstr locale="en_US">Change password</msgstr>
+        </locale>
+    </locales>
+    
+    <!-- THEME SETTINGS SECTION -->
+    <settings>
+        <!-- Product Display Settings -->
+        <setting name="products_per_page" type="select" default="12">
+            <option value="6">6 products</option>
+            <option value="12">12 products</option>
+            <option value="24">24 products</option>
+            <option value="48">48 products</option>
+        </setting>
+        
+        <setting name="product_grid_columns" type="select" default="3">
+            <option value="2">2 columns</option>
+            <option value="3">3 columns</option>
+            <option value="4">4 columns</option>
+            <option value="5">5 columns</option>
+        </setting>
+        
+        <setting name="show_product_rating" type="checkbox" default="1">
+            <option value="1">Show product ratings</option>
+        </setting>
+        
+        <setting name="show_product_reviews" type="checkbox" default="1">
+            <option value="1">Show product reviews</option>
+        </setting>
+        
+        <setting name="show_quick_view" type="checkbox" default="1">
+            <option value="1">Show quick view button</option>
+        </setting>
+        
+        <setting name="show_wishlist_button" type="checkbox" default="1">
+            <option value="1">Show wishlist button</option>
+        </setting>
+        
+        <setting name="show_compare_button" type="checkbox" default="1">
+            <option value="1">Show compare button</option>
+        </setting>
+        
+        <!-- Cart Settings -->
+        <setting name="cart_type" type="select" default="dropdown">
+            <option value="dropdown">Dropdown cart</option>
+            <option value="sidebar">Sidebar cart</option>
+            <option value="modal">Modal cart</option>
+        </setting>
+        
+        <setting name="show_cart_total" type="checkbox" default="1">
+            <option value="1">Show cart total</option>
+        </setting>
+        
+        <setting name="show_cart_count" type="checkbox" default="1">
+            <option value="1">Show cart item count</option>
+        </setting>
+        
+        <!-- Filter Settings -->
+        <setting name="show_price_filter" type="checkbox" default="1">
+            <option value="1">Show price filter</option>
+        </setting>
+        
+        <setting name="show_category_filter" type="checkbox" default="1">
+            <option value="1">Show category filter</option>
+        </setting>
+        
+        <setting name="show_brand_filter" type="checkbox" default="1">
+            <option value="1">Show brand filter</option>
+        </setting>
+        
+        <setting name="show_availability_filter" type="checkbox" default="1">
+            <option value="1">Show availability filter</option>
+        </setting>
+        
+        <!-- Checkout Settings -->
+        <setting name="guest_checkout" type="checkbox" default="1">
+            <option value="1">Allow guest checkout</option>
+        </setting>
+        
+        <setting name="require_account" type="checkbox" default="0">
+            <option value="1">Require account for checkout</option>
+        </setting>
+        
+        <setting name="show_order_notes" type="checkbox" default="1">
+            <option value="1">Show order notes field</option>
+        </setting>
+        
+        <!-- Review Settings -->
+        <setting name="require_login_review" type="checkbox" default="1">
+            <option value="1">Require login to write reviews</option>
+        </setting>
+        
+        <setting name="moderate_reviews" type="checkbox" default="1">
+            <option value="1">Moderate reviews before publishing</option>
+        </setting>
+        
+        <setting name="review_rating_required" type="checkbox" default="1">
+            <option value="1">Require rating for reviews</option>
+        </setting>
+        
+        <!-- SEO Settings -->
+        <setting name="show_product_schema" type="checkbox" default="1">
+            <option value="1">Show product schema markup</option>
+        </setting>
+        
+        <setting name="show_review_schema" type="checkbox" default="1">
+            <option value="1">Show review schema markup</option>
+        </setting>
+        
+        <setting name="show_breadcrumbs" type="checkbox" default="1">
+            <option value="1">Show breadcrumbs</option>
+        </setting>
+        
+        <!-- Performance Settings -->
+        <setting name="lazy_load_images" type="checkbox" default="1">
+            <option value="1">Lazy load product images</option>
+        </setting>
+        
+        <setting name="infinite_scroll" type="checkbox" default="0">
+            <option value="1">Enable infinite scroll</option>
+        </setting>
+        
+        <setting name="ajax_add_to_cart" type="checkbox" default="1">
+            <option value="1">AJAX add to cart</option>
+        </setting>
+        
+        <!-- Currency Settings -->
+        <setting name="show_currency_selector" type="checkbox" default="1">
+            <option value="1">Show currency selector</option>
+        </setting>
+        
+        <setting name="default_currency" type="text" default="USD">
+            <option value="">Default currency code</option>
+        </setting>
+        
+        <!-- Social Commerce -->
+        <setting name="show_social_share" type="checkbox" default="1">
+            <option value="1">Show social share buttons</option>
+        </setting>
+        
+        <setting name="show_facebook_pixel" type="checkbox" default="0">
+            <option value="1">Enable Facebook Pixel</option>
+        </setting>
+        
+        <setting name="show_google_analytics" type="checkbox" default="0">
+            <option value="1">Enable Google Analytics</option>
+        </setting>
+    </settings>
+</theme>
