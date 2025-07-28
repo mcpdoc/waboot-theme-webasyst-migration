@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme id="waboot" app="site">
+    <name>Waboot</name>
+    <description>A modern, fully-local Webasyst base theme. Built with Bootstrap 5, Alpine.js, and BEM methodology for outstanding performance across all Webasyst applications.</description>
+    <version>1.0.0</version>
+    <vendor>Waboot Team</vendor>
+    <author>WordPress to Webasyst Migration Project</author>
+    <url>https://github.com/wp-wa-migration/waboot</url>
+    
+    <!-- Parent theme - none, this is the base theme -->
+    <parent_theme></parent_theme>
+    
+    <!-- LOCALIZATION SECTION -->
+    <locales>
+        <!-- Navigation and UI Elements -->
+        <locale>
+            <msgid>Home</msgid>
+            <msgstr locale="ru_RU">Главная</msgstr>
+            <msgstr locale="en_US">Home</msgstr>
+        </locale>
+        <locale>
+            <msgid>About</msgid>
+            <msgstr locale="ru_RU">О нас</msgstr>
+            <msgstr locale="en_US">About</msgstr>
+        </locale>
+        <locale>
+            <msgid>Contact</msgid>
+            <msgstr locale="ru_RU">Контакты</msgstr>
+            <msgstr locale="en_US">Contact</msgstr>
+        </locale>
+        <locale>
+            <msgid>Search</msgid>
+            <msgstr locale="ru_RU">Поиск</msgstr>
+            <msgstr locale="en_US">Search</msgstr>
+        </locale>
+        <locale>
+            <msgid>Search products...</msgid>
+            <msgstr locale="ru_RU">Поиск товаров...</msgstr>
+            <msgstr locale="en_US">Search products...</msgstr>
+        </locale>
+        
+        <!-- E-commerce Elements -->
+        <locale>
+            <msgid>Add to Cart</msgid>
+            <msgstr locale="ru_RU">В корзину</msgstr>
+            <msgstr locale="en_US">Add to Cart</msgstr>
+        </locale>
+        <locale>
+            <msgid>Shopping Cart</msgid>
+            <msgstr locale="ru_RU">Корзина покупок</msgstr>
+            <msgstr locale="en_US">Shopping Cart</msgstr>
+        </locale>
+        <locale>
+            <msgid>Quick View</msgid>
+            <msgstr locale="ru_RU">Быстрый просмотр</msgstr>
+            <msgstr locale="en_US">Quick View</msgstr>
+        </locale>
+        <locale>
+            <msgid>Add to Wishlist</msgid>
+            <msgstr locale="ru_RU">В избранное</msgstr>
+            <msgstr locale="en_US">Add to Wishlist</msgstr>
+        </locale>
+        <locale>
+            <msgid>Compare</msgid>
+            <msgstr locale="ru_RU">Сравнить</msgstr>
+            <msgstr locale="en_US">Compare</msgstr>
+        </locale>
+        <locale>
+            <msgid>Product Details</msgid>
+            <msgstr locale="ru_RU">Подробности товара</msgstr>
+            <msgstr locale="en_US">Product Details</msgstr>
+        </locale>
+        
+        <!-- Form Elements -->
+        <locale>
+            <msgid>Subscribe</msgid>
+            <msgstr locale="ru_RU">Подписаться</msgstr>
+            <msgstr locale="en_US">Subscribe</msgstr>
+        </locale>
+        <locale>
+            <msgid>Newsletter</msgid>
+            <msgstr locale="ru_RU">Рассылка</msgstr>
+            <msgstr locale="en_US">Newsletter</msgstr>
+        </locale>
+        <locale>
+            <msgid>Your email address</msgid>
+            <msgstr locale="ru_RU">Ваш email адрес</msgstr>
+            <msgstr locale="en_US">Your email address</msgstr>
+        </locale>
+        <locale>
+            <msgid>Submit</msgid>
+            <msgstr locale="ru_RU">Отправить</msgstr>
+            <msgstr locale="en_US">Submit</msgstr>
+        </locale>
+        
+        <!-- Product Properties -->
+        <locale>
+            <msgid>Price</msgid>
+            <msgstr locale="ru_RU">Цена</msgstr>
+            <msgstr locale="en_US">Price</msgstr>
+        </locale>
+        <locale>
+            <msgid>Original Price</msgid>
+            <msgstr locale="ru_RU">Исходная цена</msgstr>
+            <msgstr locale="en_US">Original Price</msgstr>
+        </locale>
+        <locale>
+            <msgid>Sale Price</msgid>
+            <msgstr locale="ru_RU">Цена со скидкой</msgstr>
+            <msgstr locale="en_US">Sale Price</msgstr>
+        </locale>
+        <locale>
+            <msgid>Out of Stock</msgid>
+            <msgstr locale="ru_RU">Нет в наличии</msgstr>
+            <msgstr locale="en_US">Out of Stock</msgstr>
+        </locale>
+        <locale>
+            <msgid>In Stock</msgid>
+            <msgstr locale="ru_RU">В наличии</msgstr>
+            <msgstr locale="en_US">In Stock</msgstr>
+        </locale>
+        
+        <!-- Blog Elements -->
+        <locale>
+            <msgid>Read More</msgid>
+            <msgstr locale="ru_RU">Читать далее</msgstr>
+            <msgstr locale="en_US">Read More</msgstr>
+        </locale>
+        <locale>
+            <msgid>Posted on</msgid>
+            <msgstr locale="ru_RU">Опубликовано</msgstr>
+            <msgstr locale="en_US">Posted on</msgstr>
+        </locale>
+        <locale>
+            <msgid>By</msgid>
+            <msgstr locale="ru_RU">Автор</msgstr>
+            <msgstr locale="en_US">By</msgstr>
+        </locale>
+        <locale>
+            <msgid>Comments</msgid>
+            <msgstr locale="ru_RU">Комментарии</msgstr>
+            <msgstr locale="en_US">Comments</msgstr>
+        </locale>
+        <locale>
+            <msgid>Categories</msgid>
+            <msgstr locale="ru_RU">Категории</msgstr>
+            <msgstr locale="en_US">Categories</msgstr>
+        </locale>
+        <locale>
+            <msgid>Tags</msgid>
+            <msgstr locale="ru_RU">Теги</msgstr>
+            <msgstr locale="en_US">Tags</msgstr>
+        </locale>
+        
+        <!-- Community Elements -->
+        <locale>
+            <msgid>Follow</msgid>
+            <msgstr locale="ru_RU">Подписаться</msgstr>
+            <msgstr locale="en_US">Follow</msgstr>
+        </locale>
+        <locale>
+            <msgid>Unfollow</msgid>
+            <msgstr locale="ru_RU">Отписаться</msgstr>
+            <msgstr locale="en_US">Unfollow</msgstr>
+        </locale>
+        <locale>
+            <msgid>Followers</msgid>
+            <msgstr locale="ru_RU">Подписчики</msgstr>
+            <msgstr locale="en_US">Followers</msgstr>
+        </locale>
+        <locale>
+            <msgid>Following</msgid>
+            <msgstr locale="ru_RU">Подписки</msgstr>
+            <msgstr locale="en_US">Following</msgstr>
+        </locale>
+        <locale>
+            <msgid>Posts</msgid>
+            <msgstr locale="ru_RU">Посты</msgstr>
+            <msgstr locale="en_US">Posts</msgstr>
+        </locale>
+        
+        <!-- Email Campaign Elements -->
+        <locale>
+            <msgid>Campaign</msgid>
+            <msgstr locale="ru_RU">Кампания</msgstr>
+            <msgstr locale="en_US">Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Subscribers</msgid>
+            <msgstr locale="ru_RU">Подписчики</msgstr>
+            <msgstr locale="en_US">Subscribers</msgstr>
+        </locale>
+        <locale>
+            <msgid>Send Campaign</msgid>
+            <msgstr locale="ru_RU">Отправить кампанию</msgstr>
+            <msgstr locale="en_US">Send Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Campaign Status</msgid>
+            <msgstr locale="ru_RU">Статус кампании</msgstr>
+            <msgstr locale="en_US">Campaign Status</msgstr>
+        </locale>
+        
+        <!-- Accessibility Elements -->
+        <locale>
+            <msgid>Skip to main content</msgid>
+            <msgstr locale="ru_RU">Перейти к основному содержимому</msgstr>
+            <msgstr locale="en_US">Skip to main content</msgstr>
+        </locale>
+        <locale>
+            <msgid>Menu</msgid>
+            <msgstr locale="ru_RU">Меню</msgstr>
+            <msgstr locale="en_US">Menu</msgstr>
+        </locale>
+        <locale>
+            <msgid>Close</msgid>
+            <msgstr locale="ru_RU">Закрыть</msgstr>
+            <msgstr locale="en_US">Close</msgstr>
+        </locale>
+        <locale>
+            <msgid>Loading...</msgid>
+            <msgstr locale="ru_RU">Загрузка...</msgstr>
+            <msgstr locale="en_US">Loading...</msgstr>
+        </locale>
+        
+        <!-- Error Messages -->
+        <locale>
+            <msgid>Error</msgid>
+            <msgstr locale="ru_RU">Ошибка</msgstr>
+            <msgstr locale="en_US">Error</msgstr>
+        </locale>
+        <locale>
+            <msgid>Success</msgid>
+            <msgstr locale="ru_RU">Успешно</msgstr>
+            <msgstr locale="en_US">Success</msgstr>
+        </locale>
+        <locale>
+            <msgid>Warning</msgid>
+            <msgstr locale="ru_RU">Предупреждение</msgstr>
+            <msgstr locale="en_US">Warning</msgstr>
+        </locale>
+        <locale>
+            <msgid>Information</msgid>
+            <msgstr locale="ru_RU">Информация</msgstr>
+            <msgstr locale="en_US">Information</msgstr>
+        </locale>
+        
+        <!-- Pagination -->
+        <locale>
+            <msgid>Previous</msgid>
+            <msgstr locale="ru_RU">Предыдущая</msgstr>
+            <msgstr locale="en_US">Previous</msgstr>
+        </locale>
+        <locale>
+            <msgid>Next</msgid>
+            <msgstr locale="ru_RU">Следующая</msgstr>
+            <msgstr locale="en_US">Next</msgstr>
+        </locale>
+        <locale>
+            <msgid>Page</msgid>
+            <msgstr locale="ru_RU">Страница</msgstr>
+            <msgstr locale="en_US">Page</msgstr>
+        </locale>
+        <locale>
+            <msgid>of</msgid>
+            <msgstr locale="ru_RU">из</msgstr>
+            <msgstr locale="en_US">of</msgstr>
+        </locale>
+        
+        <!-- Social Media -->
+        <locale>
+            <msgid>Share</msgid>
+            <msgstr locale="ru_RU">Поделиться</msgstr>
+            <msgstr locale="en_US">Share</msgstr>
+        </locale>
+        <locale>
+            <msgid>Share on Facebook</msgid>
+            <msgstr locale="ru_RU">Поделиться в Facebook</msgstr>
+            <msgstr locale="en_US">Share on Facebook</msgstr>
+        </locale>
+        <locale>
+            <msgid>Share on Twitter</msgid>
+            <msgstr locale="ru_RU">Поделиться в Twitter</msgstr>
+            <msgstr locale="en_US">Share on Twitter</msgstr>
+        </locale>
+        <locale>
+            <msgid>Share on LinkedIn</msgid>
+            <msgstr locale="ru_RU">Поделиться в LinkedIn</msgstr>
+            <msgstr locale="en_US">Share on LinkedIn</msgstr>
+        </locale>
+        
+        <!-- Footer Elements -->
+        <locale>
+            <msgid>All rights reserved</msgid>
+            <msgstr locale="ru_RU">Все права защищены</msgstr>
+            <msgstr locale="en_US">All rights reserved</msgstr>
+        </locale>
+        <locale>
+            <msgid>Privacy Policy</msgid>
+            <msgstr locale="ru_RU">Политика конфиденциальности</msgstr>
+            <msgstr locale="en_US">Privacy Policy</msgstr>
+        </locale>
+        <locale>
+            <msgid>Terms of Service</msgid>
+            <msgstr locale="ru_RU">Условия использования</msgstr>
+            <msgstr locale="en_US">Terms of Service</msgstr>
+        </locale>
+        <locale>
+            <msgid>Cookie Policy</msgid>
+            <msgstr locale="ru_RU">Политика использования файлов cookie</msgstr>
+            <msgstr locale="en_US">Cookie Policy</msgstr>
+        </locale>
+    </locales>
+    
+    <!-- THEME SETTINGS SECTION -->
+    <settings>
+        <!-- Color Scheme Settings -->
+        <setting name="color_scheme" type="select" default="light">
+            <option value="light">Light Theme</option>
+            <option value="dark">Dark Theme</option>
+            <option value="auto">Auto (System)</option>
+        </setting>
+        
+        <!-- Typography Settings -->
+        <setting name="font_family" type="select" default="inter">
+            <option value="inter">Inter</option>
+            <option value="roboto">Roboto</option>
+            <option value="open_sans">Open Sans</option>
+            <option value="system">System Font</option>
+        </setting>
+        
+        <setting name="font_size" type="select" default="medium">
+            <option value="small">Small</option>
+            <option value="medium">Medium</option>
+            <option value="large">Large</option>
+        </setting>
+        
+        <!-- Layout Settings -->
+        <setting name="container_width" type="select" default="1200">
+            <option value="1140">1140px (Bootstrap Default)</option>
+            <option value="1200">1200px</option>
+            <option value="1320">1320px</option>
+            <option value="1400">1400px</option>
+        </setting>
+        
+        <setting name="sidebar_position" type="select" default="right">
+            <option value="left">Left</option>
+            <option value="right">Right</option>
+            <option value="none">No Sidebar</option>
+        </setting>
+        
+        <!-- Header Settings -->
+        <setting name="header_style" type="select" default="standard">
+            <option value="standard">Standard</option>
+            <option value="centered">Centered</option>
+            <option value="minimal">Minimal</option>
+        </setting>
+        
+        <setting name="show_search" type="checkbox" default="1">
+            <option value="1">Show Search Bar</option>
+        </setting>
+        
+        <setting name="show_cart" type="checkbox" default="1">
+            <option value="1">Show Shopping Cart</option>
+        </setting>
+        
+        <!-- Footer Settings -->
+        <setting name="footer_columns" type="select" default="4">
+            <option value="2">2 Columns</option>
+            <option value="3">3 Columns</option>
+            <option value="4">4 Columns</option>
+            <option value="5">5 Columns</option>
+        </setting>
+        
+        <setting name="show_social_links" type="checkbox" default="1">
+            <option value="1">Show Social Media Links</option>
+        </setting>
+        
+        <!-- Performance Settings -->
+        <setting name="lazy_loading" type="checkbox" default="1">
+            <option value="1">Enable Lazy Loading</option>
+        </setting>
+        
+        <setting name="minify_css" type="checkbox" default="1">
+            <option value="1">Minify CSS</option>
+        </setting>
+        
+        <setting name="minify_js" type="checkbox" default="1">
+            <option value="1">Minify JavaScript</option>
+        </setting>
+        
+        <!-- SEO Settings -->
+        <setting name="json_ld_enabled" type="checkbox" default="1">
+            <option value="1">Enable JSON-LD Structured Data</option>
+        </setting>
+        
+        <setting name="schema_org_enabled" type="checkbox" default="1">
+            <option value="1">Enable Schema.org Markup</option>
+        </setting>
+        
+        <!-- Accessibility Settings -->
+        <setting name="high_contrast" type="checkbox" default="0">
+            <option value="1">Enable High Contrast Mode</option>
+        </setting>
+        
+        <setting name="reduced_motion" type="checkbox" default="0">
+            <option value="1">Respect Reduced Motion Preferences</option>
+        </setting>
+        
+        <!-- Social Media Settings -->
+        <setting name="facebook_url" type="text" default="">
+            <option value="">Facebook URL</option>
+        </setting>
+        
+        <setting name="twitter_url" type="text" default="">
+            <option value="">Twitter URL</option>
+        </setting>
+        
+        <setting name="instagram_url" type="text" default="">
+            <option value="">Instagram URL</option>
+        </setting>
+        
+        <setting name="linkedin_url" type="text" default="">
+            <option value="">LinkedIn URL</option>
+        </setting>
+        
+        <setting name="youtube_url" type="text" default="">
+            <option value="">YouTube URL</option>
+        </setting>
+        
+        <!-- Contact Information -->
+        <setting name="contact_phone" type="text" default="">
+            <option value="">Contact Phone</option>
+        </setting>
+        
+        <setting name="contact_email" type="text" default="">
+            <option value="">Contact Email</option>
+        </setting>
+        
+        <setting name="contact_address" type="textarea" default="">
+            <option value="">Contact Address</option>
+        </setting>
+        
+        <!-- Business Information -->
+        <setting name="business_name" type="text" default="">
+            <option value="">Business Name</option>
+        </setting>
+        
+        <setting name="business_description" type="textarea" default="">
+            <option value="">Business Description</option>
+        </setting>
+        
+        <setting name="business_hours" type="textarea" default="">
+            <option value="">Business Hours</option>
+        </setting>
+    </settings>
+</theme>
