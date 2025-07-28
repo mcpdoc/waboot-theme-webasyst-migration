@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme id="waboot" app="hub">
+    <name>Waboot Hub</name>
+    <description>A modern, fully-local Webasyst hub theme inheriting from site:waboot. Built with Bootstrap 5, Alpine.js, and BEM methodology for outstanding community and collaboration performance.</description>
+    <version>1.0.0</version>
+    <vendor>Waboot Team</vendor>
+    <author>WordPress to Webasyst Migration Project</author>
+    <url>https://github.com/wp-wa-migration/waboot</url>
+    
+    <!-- Parent theme - inherits from site:waboot -->
+    <parent_theme>site:waboot</parent_theme>
+    
+    <!-- LOCALIZATION SECTION -->
+    <locales>
+        <!-- Community Elements -->
+        <locale>
+            <msgid>Community</msgid>
+            <msgstr locale="ru_RU">Сообщество</msgstr>
+            <msgstr locale="en_US">Community</msgstr>
+        </locale>
+        <locale>
+            <msgid>Members</msgid>
+            <msgstr locale="ru_RU">Участники</msgstr>
+            <msgstr locale="en_US">Members</msgstr>
+        </locale>
+        <locale>
+            <msgid>Groups</msgid>
+            <msgstr locale="ru_RU">Группы</msgstr>
+            <msgstr locale="en_US">Groups</msgstr>
+        </locale>
+        <locale>
+            <msgid>Discussions</msgid>
+            <msgstr locale="ru_RU">Обсуждения</msgstr>
+            <msgstr locale="en_US">Discussions</msgstr>
+        </locale>
+        <locale>
+            <msgid>Events</msgid>
+            <msgstr locale="ru_RU">События</msgstr>
+            <msgstr locale="en_US">Events</msgstr>
+        </locale>
+        <locale>
+            <msgid>Search members...</msgid>
+            <msgstr locale="ru_RU">Поиск участников...</msgstr>
+            <msgstr locale="en_US">Search members...</msgstr>
+        </locale>
+        
+        <!-- User Profile Elements -->
+        <locale>
+            <msgid>Profile</msgid>
+            <msgstr locale="ru_RU">Профиль</msgstr>
+            <msgstr locale="en_US">Profile</msgstr>
+        </locale>
+        <locale>
+            <msgid>Edit Profile</msgid>
+            <msgstr locale="ru_RU">Редактировать профиль</msgstr>
+            <msgstr locale="en_US">Edit Profile</msgstr>
+        </locale>
+        <locale>
+            <msgid>Avatar</msgid>
+            <msgstr locale="ru_RU">Аватар</msgstr>
+            <msgstr locale="en_US">Avatar</msgstr>
+        </locale>
+        <locale>
+            <msgid>Bio</msgid>
+            <msgstr locale="ru_RU">Биография</msgstr>
+            <msgstr locale="en_US">Bio</msgstr>
+        </locale>
+        <locale>
+            <msgid>Location</msgid>
+            <msgstr locale="ru_RU">Местоположение</msgstr>
+            <msgstr locale="en_US">Location</msgstr>
+        </locale>
+        <locale>
+            <msgid>Website</msgid>
+            <msgstr locale="ru_RU">Веб-сайт</msgstr>
+            <msgstr locale="en_US">Website</msgstr>
+        </locale>
+        
+        <!-- Social Interactions -->
+        <locale>
+            <msgid>Follow</msgid>
+            <msgstr locale="ru_RU">Подписаться</msgstr>
+            <msgstr locale="en_US">Follow</msgstr>
+        </locale>
+        <locale>
+            <msgid>Unfollow</msgid>
+            <msgstr locale="ru_RU">Отписаться</msgstr>
+            <msgstr locale="en_US">Unfollow</msgstr>
+        </locale>
+        <locale>
+            <msgid>Followers</msgid>
+            <msgstr locale="ru_RU">Подписчики</msgstr>
+            <msgstr locale="en_US">Followers</msgstr>
+        </locale>
+        <locale>
+            <msgid>Following</msgid>
+            <msgstr locale="ru_RU">Подписки</msgstr>
+            <msgstr locale="en_US">Following</msgstr>
+        </locale>
+        <locale>
+            <msgid>Friends</msgid>
+            <msgstr locale="ru_RU">Друзья</msgstr>
+            <msgstr locale="en_US">Friends</msgstr>
+        </locale>
+        <locale>
+            <msgid>Add Friend</msgid>
+            <msgstr locale="ru_RU">Добавить в друзья</msgstr>
+            <msgstr locale="en_US">Add Friend</msgstr>
+        </locale>
+        <locale>
+            <msgid>Remove Friend</msgid>
+            <msgstr locale="ru_RU">Удалить из друзей</msgstr>
+            <msgstr locale="en_US">Remove Friend</msgstr>
+        </locale>
+        
+        <!-- Messaging -->
+        <locale>
+            <msgid>Messages</msgid>
+            <msgstr locale="ru_RU">Сообщения</msgstr>
+            <msgstr locale="en_US">Messages</msgstr>
+        </locale>
+        <locale>
+            <msgid>Send Message</msgid>
+            <msgstr locale="ru_RU">Отправить сообщение</msgstr>
+            <msgstr locale="en_US">Send Message</msgstr>
+        </locale>
+        <locale>
+            <msgid>New Message</msgid>
+            <msgstr locale="ru_RU">Новое сообщение</msgstr>
+            <msgstr locale="en_US">New Message</msgstr>
+        </locale>
+        <locale>
+            <msgid>Inbox</msgid>
+            <msgstr locale="ru_RU">Входящие</msgstr>
+            <msgstr locale="en_US">Inbox</msgstr>
+        </locale>
+        <locale>
+            <msgid>Sent</msgid>
+            <msgstr locale="ru_RU">Отправленные</msgstr>
+            <msgstr locale="en_US">Sent</msgstr>
+        </locale>
+        
+        <!-- Groups and Communities -->
+        <locale>
+            <msgid>Create Group</msgid>
+            <msgstr locale="ru_RU">Создать группу</msgstr>
+            <msgstr locale="en_US">Create Group</msgstr>
+        </locale>
+        <locale>
+            <msgid>Join Group</msgid>
+            <msgstr locale="ru_RU">Присоединиться к группе</msgstr>
+            <msgstr locale="en_US">Join Group</msgstr>
+        </locale>
+        <locale>
+            <msgid>Leave Group</msgid>
+            <msgstr locale="ru_RU">Покинуть группу</msgstr>
+            <msgstr locale="en_US">Leave Group</msgstr>
+        </locale>
+        <locale>
+            <msgid>Group Members</msgid>
+            <msgstr locale="ru_RU">Участники группы</msgstr>
+            <msgstr locale="en_US">Group Members</msgstr>
+        </locale>
+        <locale>
+            <msgid>Group Admin</msgid>
+            <msgstr locale="ru_RU">Администратор группы</msgstr>
+            <msgstr locale="en_US">Group Admin</msgstr>
+        </locale>
+        <locale>
+            <msgid>Group Settings</msgid>
+            <msgstr locale="ru_RU">Настройки группы</msgstr>
+            <msgstr locale="en_US">Group Settings</msgstr>
+        </locale>
+        
+        <!-- Discussions and Forums -->
+        <locale>
+            <msgid>Start Discussion</msgid>
+            <msgstr locale="ru_RU">Начать обсуждение</msgstr>
+            <msgstr locale="en_US">Start Discussion</msgstr>
+        </locale>
+        <locale>
+            <msgid>Reply</msgid>
+            <msgstr locale="ru_RU">Ответить</msgstr>
+            <msgstr locale="en_US">Reply</msgstr>
+        </locale>
+        <locale>
+            <msgid>Edit Post</msgid>
+            <msgstr locale="ru_RU">Редактировать пост</msgstr>
+            <msgstr locale="en_US">Edit Post</msgstr>
+        </locale>
+        <locale>
+            <msgid>Delete Post</msgid>
+            <msgstr locale="ru_RU">Удалить пост</msgstr>
+            <msgstr locale="en_US">Delete Post</msgstr>
+        </locale>
+        <locale>
+            <msgid>Like</msgid>
+            <msgstr locale="ru_RU">Нравится</msgstr>
+            <msgstr locale="en_US">Like</msgstr>
+        </locale>
+        <locale>
+            <msgid>Unlike</msgid>
+            <msgstr locale="ru_RU">Не нравится</msgstr>
+            <msgstr locale="en_US">Unlike</msgstr>
+        </locale>
+        
+        <!-- Events -->
+        <locale>
+            <msgid>Create Event</msgid>
+            <msgstr locale="ru_RU">Создать событие</msgstr>
+            <msgstr locale="en_US">Create Event</msgstr>
+        </locale>
+        <locale>
+            <msgid>Attend</msgid>
+            <msgstr locale="ru_RU">Посетить</msgstr>
+            <msgstr locale="en_US">Attend</msgstr>
+        </locale>
+        <locale>
+            <msgid>Maybe</msgid>
+            <msgstr locale="ru_RU">Возможно</msgstr>
+            <msgstr locale="en_US">Maybe</msgstr>
+        </locale>
+        <locale>
+            <msgid>Decline</msgid>
+            <msgstr locale="ru_RU">Отклонить</msgstr>
+            <msgstr locale="en_US">Decline</msgstr>
+        </locale>
+        <locale>
+            <msgid>Event Details</msgid>
+            <msgstr locale="ru_RU">Детали события</msgstr>
+            <msgstr locale="en_US">Event Details</msgstr>
+        </locale>
+        <locale>
+            <msgid>Event Location</msgid>
+            <msgstr locale="ru_RU">Место события</msgstr>
+            <msgstr locale="en_US">Event Location</msgstr>
+        </locale>
+        <locale>
+            <msgid>Event Date</msgid>
+            <msgstr locale="ru_RU">Дата события</msgstr>
+            <msgstr locale="en_US">Event Date</msgstr>
+        </locale>
+        
+        <!-- Notifications -->
+        <locale>
+            <msgid>Notifications</msgid>
+            <msgstr locale="ru_RU">Уведомления</msgstr>
+            <msgstr locale="en_US">Notifications</msgstr>
+        </locale>
+        <locale>
+            <msgid>Mark as Read</msgid>
+            <msgstr locale="ru_RU">Отметить как прочитанное</msgstr>
+            <msgstr locale="en_US">Mark as Read</msgstr>
+        </locale>
+        <locale>
+            <msgid>Clear All</msgid>
+            <msgstr locale="ru_RU">Очистить все</msgstr>
+            <msgstr locale="en_US">Clear All</msgstr>
+        </locale>
+        <locale>
+            <msgid>Notification Settings</msgid>
+            <msgstr locale="ru_RU">Настройки уведомлений</msgstr>
+            <msgstr locale="en_US">Notification Settings</msgstr>
+        </locale>
+        
+        <!-- Privacy and Security -->
+        <locale>
+            <msgid>Privacy Settings</msgid>
+            <msgstr locale="ru_RU">Настройки конфиденциальности</msgstr>
+            <msgstr locale="en_US">Privacy Settings</msgstr>
+        </locale>
+        <locale>
+            <msgid>Public Profile</msgid>
+            <msgstr locale="ru_RU">Публичный профиль</msgstr>
+            <msgstr locale="en_US">Public Profile</msgstr>
+        </locale>
+        <locale>
+            <msgid>Private Profile</msgid>
+            <msgstr locale="ru_RU">Приватный профиль</msgstr>
+            <msgstr locale="en_US">Private Profile</msgstr>
+        </locale>
+        <locale>
+            <msgid>Block User</msgid>
+            <msgstr locale="ru_RU">Заблокировать пользователя</msgstr>
+            <msgstr locale="en_US">Block User</msgstr>
+        </locale>
+        <locale>
+            <msgid>Unblock User</msgid>
+            <msgstr locale="ru_RU">Разблокировать пользователя</msgstr>
+            <msgstr locale="en_US">Unblock User</msgstr>
+        </locale>
+        
+        <!-- Activity Feed -->
+        <locale>
+            <msgid>Activity</msgid>
+            <msgstr locale="ru_RU">Активность</msgstr>
+            <msgstr locale="en_US">Activity</msgstr>
+        </locale>
+        <locale>
+            <msgid>Recent Activity</msgid>
+            <msgstr locale="ru_RU">Недавняя активность</msgstr>
+            <msgstr locale="en_US">Recent Activity</msgstr>
+        </locale>
+        <locale>
+            <msgid>My Activity</msgid>
+            <msgstr locale="ru_RU">Моя активность</msgstr>
+            <msgstr locale="en_US">My Activity</msgstr>
+        </locale>
+        <locale>
+            <msgid>Activity Feed</msgid>
+            <msgstr locale="ru_RU">Лента активности</msgstr>
+            <msgstr locale="en_US">Activity Feed</msgstr>
+        </locale>
+        
+        <!-- Search and Discovery -->
+        <locale>
+            <msgid>Discover</msgid>
+            <msgstr locale="ru_RU">Открыть</msgstr>
+            <msgstr locale="en_US">Discover</msgstr>
+        </locale>
+        <locale>
+            <msgid>Popular</msgid>
+            <msgstr locale="ru_RU">Популярное</msgstr>
+            <msgstr locale="en_US">Popular</msgstr>
+        </locale>
+        <locale>
+            <msgid>Trending</msgid>
+            <msgstr locale="ru_RU">В тренде</msgstr>
+            <msgstr locale="en_US">Trending</msgstr>
+        </locale>
+        <locale>
+            <msgid>New Members</msgid>
+            <msgstr locale="ru_RU">Новые участники</msgstr>
+            <msgstr locale="en_US">New Members</msgstr>
+        </locale>
+        <locale>
+            <msgid>Online Now</msgid>
+            <msgstr locale="ru_RU">Сейчас онлайн</msgstr>
+            <msgstr locale="en_US">Online Now</msgstr>
+        </locale>
+    </locales>
+    
+    <!-- THEME SETTINGS SECTION -->
+    <settings>
+        <!-- Profile Display Settings -->
+        <setting name="show_profile_photos" type="checkbox" default="1">
+            <option value="1">Show profile photos</option>
+        </setting>
+        
+        <setting name="show_online_status" type="checkbox" default="1">
+            <option value="1">Show online status</option>
+        </setting>
+        
+        <setting name="show_last_seen" type="checkbox" default="1">
+            <option value="1">Show last seen</option>
+        </setting>
+        
+        <setting name="show_friend_count" type="checkbox" default="1">
+            <option value="1">Show friend count</option>
+        </setting>
+        
+        <setting name="show_follower_count" type="checkbox" default="1">
+            <option value="1">Show follower count</option>
+        </setting>
+        
+        <!-- Privacy Settings -->
+        <setting name="default_privacy" type="select" default="public">
+            <option value="public">Public</option>
+            <option value="friends">Friends only</option>
+            <option value="private">Private</option>
+        </setting>
+        
+        <setting name="allow_friend_requests" type="checkbox" default="1">
+            <option value="1">Allow friend requests</option>
+        </setting>
+        
+        <setting name="allow_messages" type="checkbox" default="1">
+            <option value="1">Allow messages from members</option>
+        </setting>
+        
+        <setting name="show_email" type="checkbox" default="0">
+            <option value="1">Show email address</option>
+        </setting>
+        
+        <!-- Activity Feed Settings -->
+        <setting name="activity_items_per_page" type="select" default="20">
+            <option value="10">10 items</option>
+            <option value="20">20 items</option>
+            <option value="30">30 items</option>
+            <option value="50">50 items</option>
+        </setting>
+        
+        <setting name="show_activity_photos" type="checkbox" default="1">
+            <option value="1">Show activity photos</option>
+        </setting>
+        
+        <setting name="auto_refresh_activity" type="checkbox" default="1">
+            <option value="1">Auto-refresh activity feed</option>
+        </setting>
+        
+        <!-- Group Settings -->
+        <setting name="max_groups_per_user" type="select" default="10">
+            <option value="5">5 groups</option>
+            <option value="10">10 groups</option>
+            <option value="15">15 groups</option>
+            <option value="unlimited">Unlimited</option>
+        </setting>
+        
+        <setting name="allow_group_creation" type="checkbox" default="1">
+            <option value="1">Allow group creation</option>
+        </setting>
+        
+        <setting name="moderate_group_posts" type="checkbox" default="0">
+            <option value="1">Moderate group posts</option>
+        </setting>
+        
+        <!-- Event Settings -->
+        <setting name="max_events_per_user" type="select" default="5">
+            <option value="3">3 events</option>
+            <option value="5">5 events</option>
+            <option value="10">10 events</option>
+            <option value="unlimited">Unlimited</option>
+        </setting>
+        
+        <setting name="allow_event_creation" type="checkbox" default="1">
+            <option value="1">Allow event creation</option>
+        </setting>
+        
+        <setting name="show_event_attendees" type="checkbox" default="1">
+            <option value="1">Show event attendees</option>
+        </setting>
+        
+        <!-- Messaging Settings -->
+        <setting name="enable_messaging" type="checkbox" default="1">
+            <option value="1">Enable messaging system</option>
+        </setting>
+        
+        <setting name="message_notifications" type="checkbox" default="1">
+            <option value="1">Message notifications</option>
+        </setting>
+        
+        <setting name="read_receipts" type="checkbox" default="1">
+            <option value="1">Read receipts</option>
+        </setting>
+        
+        <!-- Search and Discovery -->
+        <setting name="enable_advanced_search" type="checkbox" default="1">
+            <option value="1">Enable advanced search</option>
+        </setting>
+        
+        <setting name="show_search_suggestions" type="checkbox" default="1">
+            <option value="1">Show search suggestions</option>
+        </setting>
+        
+        <setting name="enable_location_search" type="checkbox" default="1">
+            <option value="1">Enable location-based search</option>
+        </setting>
+        
+        <!-- Notification Settings -->
+        <setting name="email_notifications" type="checkbox" default="1">
+            <option value="1">Email notifications</option>
+        </setting>
+        
+        <setting name="push_notifications" type="checkbox" default="1">
+            <option value="1">Push notifications</option>
+        </setting>
+        
+        <setting name="notification_sound" type="checkbox" default="1">
+            <option value="1">Notification sound</option>
+        </setting>
+        
+        <!-- Performance Settings -->
+        <setting name="lazy_load_profiles" type="checkbox" default="1">
+            <option value="1">Lazy load profiles</option>
+        </setting>
+        
+        <setting name="cache_activity_feed" type="checkbox" default="1">
+            <option value="1">Cache activity feed</option>
+        </setting>
+        
+        <setting name="ajax_messaging" type="checkbox" default="1">
+            <option value="1">AJAX messaging</option>
+        </setting>
+        
+        <!-- Security Settings -->
+        <setting name="require_email_verification" type="checkbox" default="1">
+            <option value="1">Require email verification</option>
+        </setting>
+        
+        <setting name="enable_captcha" type="checkbox" default="0">
+            <option value="1">Enable CAPTCHA</option>
+        </setting>
+        
+        <setting name="moderate_new_members" type="checkbox" default="0">
+            <option value="1">Moderate new members</option>
+        </setting>
+        
+        <!-- Analytics Settings -->
+        <setting name="track_user_activity" type="checkbox" default="1">
+            <option value="1">Track user activity</option>
+        </setting>
+        
+        <setting name="show_analytics" type="checkbox" default="0">
+            <option value="1">Show analytics to admins</option>
+        </setting>
+        
+        <setting name="enable_google_analytics" type="checkbox" default="0">
+            <option value="1">Enable Google Analytics</option>
+        </setting>
+    </settings>
+</theme>
