@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+<theme id="waboot" app="mailer">
+    <name>Waboot Mailer</name>
+    <description>A modern, fully-local Webasyst mailer theme inheriting from site:waboot. Built with Bootstrap 5, Alpine.js, and BEM methodology for outstanding email campaign performance.</description>
+    <version>1.0.0</version>
+    <vendor>Waboot Team</vendor>
+    <author>WordPress to Webasyst Migration Project</author>
+    <url>https://github.com/wp-wa-migration/waboot</url>
+    
+    <!-- Parent theme - inherits from site:waboot -->
+    <parent_theme>site:waboot</parent_theme>
+    
+    <!-- LOCALIZATION SECTION -->
+    <locales>
+        <!-- Email Campaign Elements -->
+        <locale>
+            <msgid>Campaign</msgid>
+            <msgstr locale="ru_RU">Кампания</msgstr>
+            <msgstr locale="en_US">Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Create Campaign</msgid>
+            <msgstr locale="ru_RU">Создать кампанию</msgstr>
+            <msgstr locale="en_US">Create Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Edit Campaign</msgid>
+            <msgstr locale="ru_RU">Редактировать кампанию</msgstr>
+            <msgstr locale="en_US">Edit Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Delete Campaign</msgid>
+            <msgstr locale="ru_RU">Удалить кампанию</msgstr>
+            <msgstr locale="en_US">Delete Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Campaign Name</msgid>
+            <msgstr locale="ru_RU">Название кампании</msgstr>
+            <msgstr locale="en_US">Campaign Name</msgstr>
+        </locale>
+        <locale>
+            <msgid>Campaign Subject</msgid>
+            <msgstr locale="ru_RU">Тема кампании</msgstr>
+            <msgstr locale="en_US">Campaign Subject</msgstr>
+        </locale>
+        
+        <!-- Subscribers Management -->
+        <locale>
+            <msgid>Subscribers</msgid>
+            <msgstr locale="ru_RU">Подписчики</msgstr>
+            <msgstr locale="en_US">Subscribers</msgstr>
+        </locale>
+        <locale>
+            <msgid>Add Subscriber</msgid>
+            <msgstr locale="ru_RU">Добавить подписчика</msgstr>
+            <msgstr locale="en_US">Add Subscriber</msgstr>
+        </locale>
+        <locale>
+            <msgid>Import Subscribers</msgid>
+            <msgstr locale="ru_RU">Импортировать подписчиков</msgstr>
+            <msgstr locale="en_US">Import Subscribers</msgstr>
+        </locale>
+        <locale>
+            <msgid>Export Subscribers</msgid>
+            <msgstr locale="ru_RU">Экспортировать подписчиков</msgstr>
+            <msgstr locale="en_US">Export Subscribers</msgstr>
+        </locale>
+        <locale>
+            <msgid>Subscriber Email</msgid>
+            <msgstr locale="ru_RU">Email подписчика</msgstr>
+            <msgstr locale="en_US">Subscriber Email</msgstr>
+        </locale>
+        <locale>
+            <msgid>Subscriber Name</msgid>
+            <msgstr locale="ru_RU">Имя подписчика</msgstr>
+            <msgstr locale="en_US">Subscriber Name</msgstr>
+        </locale>
+        
+        <!-- Campaign Status -->
+        <locale>
+            <msgid>Draft</msgid>
+            <msgstr locale="ru_RU">Черновик</msgstr>
+            <msgstr locale="en_US">Draft</msgstr>
+        </locale>
+        <locale>
+            <msgid>Scheduled</msgid>
+            <msgstr locale="ru_RU">Запланировано</msgstr>
+            <msgstr locale="en_US">Scheduled</msgstr>
+        </locale>
+        <locale>
+            <msgid>Sending</msgid>
+            <msgstr locale="ru_RU">Отправляется</msgstr>
+            <msgstr locale="en_US">Sending</msgstr>
+        </locale>
+        <locale>
+            <msgid>Sent</msgid>
+            <msgstr locale="ru_RU">Отправлено</msgstr>
+            <msgstr locale="en_US">Sent</msgstr>
+        </locale>
+        <locale>
+            <msgid>Paused</msgid>
+            <msgstr locale="ru_RU">Приостановлено</msgstr>
+            <msgstr locale="en_US">Paused</msgstr>
+        </locale>
+        <locale>
+            <msgid>Cancelled</msgid>
+            <msgstr locale="ru_RU">Отменено</msgstr>
+            <msgstr locale="en_US">Cancelled</msgstr>
+        </locale>
+        
+        <!-- Email Templates -->
+        <locale>
+            <msgid>Templates</msgid>
+            <msgstr locale="ru_RU">Шаблоны</msgstr>
+            <msgstr locale="en_US">Templates</msgstr>
+        </locale>
+        <locale>
+            <msgid>Create Template</msgid>
+            <msgstr locale="ru_RU">Создать шаблон</msgstr>
+            <msgstr locale="en_US">Create Template</msgstr>
+        </locale>
+        <locale>
+            <msgid>Edit Template</msgid>
+            <msgstr locale="ru_RU">Редактировать шаблон</msgstr>
+            <msgstr locale="en_US">Edit Template</msgstr>
+        </locale>
+        <locale>
+            <msgid>Template Name</msgid>
+            <msgstr locale="ru_RU">Название шаблона</msgstr>
+            <msgstr locale="en_US">Template Name</msgstr>
+        </locale>
+        <locale>
+            <msgid>Template Subject</msgid>
+            <msgstr locale="ru_RU">Тема шаблона</msgstr>
+            <msgstr locale="en_US">Template Subject</msgstr>
+        </locale>
+        
+        <!-- Campaign Actions -->
+        <locale>
+            <msgid>Send Campaign</msgid>
+            <msgstr locale="ru_RU">Отправить кампанию</msgstr>
+            <msgstr locale="en_US">Send Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Schedule Campaign</msgid>
+            <msgstr locale="ru_RU">Запланировать кампанию</msgstr>
+            <msgstr locale="en_US">Schedule Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Pause Campaign</msgid>
+            <msgstr locale="ru_RU">Приостановить кампанию</msgstr>
+            <msgstr locale="en_US">Pause Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Resume Campaign</msgid>
+            <msgstr locale="ru_RU">Возобновить кампанию</msgstr>
+            <msgstr locale="en_US">Resume Campaign</msgstr>
+        </locale>
+        <locale>
+            <msgid>Cancel Campaign</msgid>
+            <msgstr locale="ru_RU">Отменить кампанию</msgstr>
+            <msgstr locale="en_US">Cancel Campaign</msgstr>
+        </locale>
+        
+        <!-- Campaign Statistics -->
+        <locale>
+            <msgid>Statistics</msgid>
+            <msgstr locale="ru_RU">Статистика</msgstr>
+            <msgstr locale="en_US">Statistics</msgstr>
+        </locale>
+        <locale>
+            <msgid>Sent</msgid>
+            <msgstr locale="ru_RU">Отправлено</msgstr>
+            <msgstr locale="en_US">Sent</msgstr>
+        </locale>
+        <locale>
+            <msgid>Delivered</msgid>
+            <msgstr locale="ru_RU">Доставлено</msgstr>
+            <msgstr locale="en_US">Delivered</msgstr>
+        </locale>
+        <locale>
+            <msgid>Opened</msgid>
+            <msgstr locale="ru_RU">Открыто</msgstr>
+            <msgstr locale="en_US">Opened</msgstr>
+        </locale>
+        <locale>
+            <msgid>Clicked</msgid>
+            <msgstr locale="ru_RU">Переходы</msgstr>
+            <msgstr locale="en_US">Clicked</msgstr>
+        </locale>
+        <locale>
+            <msgid>Bounced</msgid>
+            <msgstr locale="ru_RU">Отскоки</msgstr>
+            <msgstr locale="en_US">Bounced</msgstr>
+        </locale>
+        <locale>
+            <msgid>Unsubscribed</msgid>
+            <msgstr locale="ru_RU">Отписались</msgstr>
+            <msgstr locale="en_US">Unsubscribed</msgstr>
+        </locale>
+        
+        <!-- Email Editor -->
+        <locale>
+            <msgid>Email Editor</msgid>
+            <msgstr locale="ru_RU">Редактор писем</msgstr>
+            <msgstr locale="en_US">Email Editor</msgstr>
+        </locale>
+        <locale>
+            <msgid>Text Editor</msgid>
+            <msgstr locale="ru_RU">Текстовый редактор</msgstr>
+            <msgstr locale="en_US">Text Editor</msgstr>
+        </locale>
+        <locale>
+            <msgid>HTML Editor</msgid>
+            <msgstr locale="ru_RU">HTML редактор</msgstr>
+            <msgstr locale="en_US">HTML Editor</msgstr>
+        </locale>
+        <locale>
+            <msgid>Visual Editor</msgid>
+            <msgstr locale="ru_RU">Визуальный редактор</msgstr>
+            <msgstr locale="en_US">Visual Editor</msgstr>
+        </locale>
+        <locale>
+            <msgid>Insert Image</msgid>
+            <msgstr locale="ru_RU">Вставить изображение</msgstr>
+            <msgstr locale="en_US">Insert Image</msgstr>
+        </locale>
+        <locale>
+            <msgid>Insert Link</msgid>
+            <msgstr locale="ru_RU">Вставить ссылку</msgstr>
+            <msgstr locale="en_US">Insert Link</msgstr>
+        </locale>
+        
+        <!-- Lists and Segments -->
+        <locale>
+            <msgid>Lists</msgid>
+            <msgstr locale="ru_RU">Списки</msgstr>
+            <msgstr locale="en_US">Lists</msgstr>
+        </locale>
+        <locale>
+            <msgid>Create List</msgid>
+            <msgstr locale="ru_RU">Создать список</msgstr>
+            <msgstr locale="en_US">Create List</msgstr>
+        </locale>
+        <locale>
+            <msgid>Edit List</msgid>
+            <msgstr locale="ru_RU">Редактировать список</msgstr>
+            <msgstr locale="en_US">Edit List</msgstr>
+        </locale>
+        <locale>
+            <msgid>List Name</msgid>
+            <msgstr locale="ru_RU">Название списка</msgstr>
+            <msgstr locale="en_US">List Name</msgstr>
+        </locale>
+        <locale>
+            <msgid>Segments</msgid>
+            <msgstr locale="ru_RU">Сегменты</msgstr>
+            <msgstr locale="en_US">Segments</msgstr>
+        </locale>
+        <locale>
+            <msgid>Create Segment</msgid>
+            <msgstr locale="ru_RU">Создать сегмент</msgstr>
+            <msgstr locale="en_US">Create Segment</msgstr>
+        </locale>
+        
+        <!-- Automation -->
+        <locale>
+            <msgid>Automation</msgid>
+            <msgstr locale="ru_RU">Автоматизация</msgstr>
+            <msgstr locale="en_US">Automation</msgstr>
+        </locale>
+        <locale>
+            <msgid>Create Workflow</msgid>
+            <msgstr locale="ru_RU">Создать рабочий процесс</msgstr>
+            <msgstr locale="en_US">Create Workflow</msgstr>
+        </locale>
+        <locale>
+            <msgid>Trigger</msgid>
+            <msgstr locale="ru_RU">Триггер</msgstr>
+            <msgstr locale="en_US">Trigger</msgstr>
+        </locale>
+        <locale>
+            <msgid>Action</msgid>
+            <msgstr locale="ru_RU">Действие</msgstr>
+            <msgstr locale="en_US">Action</msgstr>
+        </locale>
+        <locale>
+            <msgid>Condition</msgid>
+            <msgstr locale="ru_RU">Условие</msgstr>
+            <msgstr locale="en_US">Condition</msgstr>
+        </locale>
+        
+        <!-- Reports and Analytics -->
+        <locale>
+            <msgid>Reports</msgid>
+            <msgstr locale="ru_RU">Отчеты</msgstr>
+            <msgstr locale="en_US">Reports</msgstr>
+        </locale>
+        <locale>
+            <msgid>Campaign Performance</msgid>
+            <msgstr locale="ru_RU">Производительность кампании</msgstr>
+            <msgstr locale="en_US">Campaign Performance</msgstr>
+        </locale>
+        <locale>
+            <msgid>Subscriber Growth</msgid>
+            <msgstr locale="ru_RU">Рост подписчиков</msgstr>
+            <msgstr locale="en_US">Subscriber Growth</msgstr>
+        </locale>
+        <locale>
+            <msgid>Email Engagement</msgid>
+            <msgstr locale="ru_RU">Вовлеченность в письмах</msgstr>
+            <msgstr locale="en_US">Email Engagement</msgstr>
+        </locale>
+        <locale>
+            <msgid>Click-through Rate</msgid>
+            <msgstr locale="ru_RU">Показатель кликов</msgstr>
+            <msgstr locale="en_US">Click-through Rate</msgstr>
+        </locale>
+        <locale>
+            <msgid>Open Rate</msgid>
+            <msgstr locale="ru_RU">Показатель открытий</msgstr>
+            <msgstr locale="en_US">Open Rate</msgstr>
+        </locale>
+        
+        <!-- Settings and Configuration -->
+        <locale>
+            <msgid>Settings</msgid>
+            <msgstr locale="ru_RU">Настройки</msgstr>
+            <msgstr locale="en_US">Settings</msgstr>
+        </locale>
+        <locale>
+            <msgid>SMTP Configuration</msgid>
+            <msgstr locale="ru_RU">Конфигурация SMTP</msgstr>
+            <msgstr locale="en_US">SMTP Configuration</msgstr>
+        </locale>
+        <locale>
+            <msgid>Sender Information</msgid>
+            <msgstr locale="ru_RU">Информация об отправителе</msgstr>
+            <msgstr locale="en_US">Sender Information</msgstr>
+        </locale>
+        <locale>
+            <msgid>Bounce Handling</msgid>
+            <msgstr locale="ru_RU">Обработка отскоков</msgstr>
+            <msgstr locale="en_US">Bounce Handling</msgstr>
+        </locale>
+        <locale>
+            <msgid>Spam Prevention</msgid>
+            <msgstr locale="ru_RU">Предотвращение спама</msgstr>
+            <msgstr locale="en_US">Spam Prevention</msgstr>
+        </locale>
+        
+        <!-- Testing and Preview -->
+        <locale>
+            <msgid>Test Email</msgid>
+            <msgstr locale="ru_RU">Тестовое письмо</msgstr>
+            <msgstr locale="en_US">Test Email</msgstr>
+        </locale>
+        <locale>
+            <msgid>Send Test</msgid>
+            <msgstr locale="ru_RU">Отправить тест</msgstr>
+            <msgstr locale="en_US">Send Test</msgstr>
+        </locale>
+        <locale>
+            <msgid>Preview</msgid>
+            <msgstr locale="ru_RU">Предварительный просмотр</msgstr>
+            <msgstr locale="en_US">Preview</msgstr>
+        </locale>
+        <locale>
+            <msgid>Mobile Preview</msgid>
+            <msgstr locale="ru_RU">Предварительный просмотр на мобильном</msgstr>
+            <msgstr locale="en_US">Mobile Preview</msgstr>
+        </locale>
+        <locale>
+            <msgid>Desktop Preview</msgid>
+            <msgstr locale="ru_RU">Предварительный просмотр на компьютере</msgstr>
+            <msgstr locale="en_US">Desktop Preview</msgstr>
+        </locale>
+    </locales>
+    
+    <!-- THEME SETTINGS SECTION -->
+    <settings>
+        <!-- Campaign Display Settings -->
+        <setting name="campaigns_per_page" type="select" default="10">
+            <option value="5">5 campaigns</option>
+            <option value="10">10 campaigns</option>
+            <option value="20">20 campaigns</option>
+            <option value="50">50 campaigns</option>
+        </setting>
+        
+        <setting name="show_campaign_stats" type="checkbox" default="1">
+            <option value="1">Show campaign statistics</option>
+        </setting>
+        
+        <setting name="show_subscriber_count" type="checkbox" default="1">
+            <option value="1">Show subscriber count</option>
+        </setting>
+        
+        <setting name="show_send_date" type="checkbox" default="1">
+            <option value="1">Show send date</option>
+        </setting>
+        
+        <setting name="show_campaign_status" type="checkbox" default="1">
+            <option value="1">Show campaign status</option>
+        </setting>
+        
+        <!-- Email Editor Settings -->
+        <setting name="default_editor" type="select" default="visual">
+            <option value="text">Text Editor</option>
+            <option value="html">HTML Editor</option>
+            <option value="visual">Visual Editor</option>
+        </setting>
+        
+        <setting name="auto_save_drafts" type="checkbox" default="1">
+            <option value="1">Auto-save drafts</option>
+        </setting>
+        
+        <setting name="show_html_source" type="checkbox" default="1">
+            <option value="1">Show HTML source</option>
+        </setting>
+        
+        <setting name="enable_image_upload" type="checkbox" default="1">
+            <option value="1">Enable image upload</option>
+        </setting>
+        
+        <!-- Template Settings -->
+        <setting name="show_template_gallery" type="checkbox" default="1">
+            <option value="1">Show template gallery</option>
+        </setting>
+        
+        <setting name="allow_custom_templates" type="checkbox" default="1">
+            <option value="1">Allow custom templates</option>
+        </setting>
+        
+        <setting name="template_categories" type="checkbox" default="1">
+            <option value="1">Show template categories</option>
+        </setting>
+        
+        <!-- Subscriber Management -->
+        <setting name="subscribers_per_page" type="select" default="50">
+            <option value="25">25 subscribers</option>
+            <option value="50">50 subscribers</option>
+            <option value="100">100 subscribers</option>
+            <option value="200">200 subscribers</option>
+        </setting>
+        
+        <setting name="show_subscriber_activity" type="checkbox" default="1">
+            <option value="1">Show subscriber activity</option>
+        </setting>
+        
+        <setting name="enable_double_optin" type="checkbox" default="1">
+            <option value="1">Enable double opt-in</option>
+        </setting>
+        
+        <setting name="show_unsubscribe_link" type="checkbox" default="1">
+            <option value="1">Show unsubscribe link</option>
+        </setting>
+        
+        <!-- Automation Settings -->
+        <setting name="enable_automation" type="checkbox" default="1">
+            <option value="1">Enable automation</option>
+        </setting>
+        
+        <setting name="max_automation_workflows" type="select" default="10">
+            <option value="5">5 workflows</option>
+            <option value="10">10 workflows</option>
+            <option value="20">20 workflows</option>
+            <option value="unlimited">Unlimited</option>
+        </setting>
+        
+        <setting name="automation_notifications" type="checkbox" default="1">
+            <option value="1">Automation notifications</option>
+        </setting>
+        
+        <!-- Reporting Settings -->
+        <setting name="enable_tracking" type="checkbox" default="1">
+            <option value="1">Enable email tracking</option>
+        </setting>
+        
+        <setting name="track_opens" type="checkbox" default="1">
+            <option value="1">Track email opens</option>
+        </setting>
+        
+        <setting name="track_clicks" type="checkbox" default="1">
+            <option value="1">Track link clicks</option>
+        </setting>
+        
+        <setting name="track_unsubscribes" type="checkbox" default="1">
+            <option value="1">Track unsubscribes</option>
+        </setting>
+        
+        <!-- Performance Settings -->
+        <setting name="batch_sending" type="checkbox" default="1">
+            <option value="1">Enable batch sending</option>
+        </setting>
+        
+        <setting name="send_rate_limit" type="select" default="100">
+            <option value="50">50 emails per hour</option>
+            <option value="100">100 emails per hour</option>
+            <option value="200">200 emails per hour</option>
+            <option value="500">500 emails per hour</option>
+        </setting>
+        
+        <setting name="retry_failed_sends" type="checkbox" default="1">
+            <option value="1">Retry failed sends</option>
+        </setting>
+        
+        <!-- Security Settings -->
+        <setting name="require_confirmation" type="checkbox" default="1">
+            <option value="1">Require confirmation for sending</option>
+        </setting>
+        
+        <setting name="spam_check" type="checkbox" default="1">
+            <option value="1">Enable spam checking</option>
+        </setting>
+        
+        <setting name="dkim_signing" type="checkbox" default="1">
+            <option value="1">Enable DKIM signing</option>
+        </setting>
+        
+        <!-- Analytics Settings -->
+        <setting name="enable_analytics" type="checkbox" default="1">
+            <option value="1">Enable email analytics</option>
+        </setting>
+        
+        <setting name="show_engagement_metrics" type="checkbox" default="1">
+            <option value="1">Show engagement metrics</option>
+        </setting>
+        
+        <setting name="export_reports" type="checkbox" default="1">
+            <option value="1">Allow report export</option>
+        </setting>
+    </settings>
+</theme>
